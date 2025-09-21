@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nomad - Rent</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style_mc.css">
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <a href="main.html">home</a>
+      <a href="catalog.html">catalog</a>
+      <a href="rent.html">rent</a>
+      <a href="contact.html">contact</a>
+    </nav>
+  </header>
+
+  <section class="cat-head">
+    <h1>Rent a Car</h1>
+    <p>Find your perfect ride — choose dates, car model and book.</p>
+  </section>
+
+  <div class="rent-box card">
+    <form id="rent-form" novalidate>
+      <label for="car">Choose Car</label>
+      <select id="car" name="car" required>
+        <option value="">-- Select a car --</option>
+        <option value="Porsche 911">Porsche 911</option>
+        <option value="BMW M5">BMW M5</option>
+        <option value="Mercedes G63">Mercedes G63</option>
+      </select>
+
+      <label for="start">Start Date</label>
+      <input type="date" id="start" name="start" min="2025-09-20" required>
+
+      <label for="end">End Date</label>
+      <input type="date" id="end" name="end" min="2025-09-20" required>
+
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+      <label for="phone">Phone</label>
+      <input type="tel" id="phone" name="phone" placeholder="+7 700 000 0000" required>
+
+      <label for="notes">Notes (optional)</label>
+      <textarea id="notes" name="notes" placeholder="For example : need a child seat"></textarea>
+
+      <div style="margin-top:12px; text-align:center;">
+        <button type="submit" class="bttn-cat">Book Now</button>
+      </div>
+    </form>
+  </div>
+
+  <section class="car-preview">
+    <div class="car-card">
+      <img src="Porsche 911.jpg" alt="Porsche 911">
+      <h2>Porsche 911</h2>
+      <p>Comfort · Automatic · 2021</p>
+      <p class="price">$120,000</p>
+    </div>
+
+    <div class="car-card">
+      <img src="BMW M5.jpg" alt="BMW M5">
+      <h2>BMW M5</h2>
+      <p>Sport · Automatic · 2019</p>
+      <p class="price">$140,000</p>
+    </div>
+
+    <div class="car-card">
+      <img src="Mercedes G63.jpg" alt="Mercedes G63">
+      <h2>Mercedes G63</h2>
+      <p>Luxury · Automatic · 2022</p>
+      <p class="price">$200,000</p>
+    </div>
+  </section>
+
+  <footer>
+    <a href="contact.html" class="bttn">Contact Us</a>
+    <p>© 2025 Nomad. Team Members: A. Alikhan & K. Mukhammedali</p>
+  </footer>
+</body>
+</html>

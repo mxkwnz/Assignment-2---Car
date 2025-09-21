@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nomad - Contact</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style_mc.css">
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <a href="main.html">home</a>
+      <a href="catalog.html">catalog</a>
+      <a href="rent.html">rent</a>
+      <a href="contact.html">contact</a>
+    </nav>
+  </header>
+
+  <section class="cat-head">
+    <h1>Contact Us</h1>
+    <p>Have questions? Reach out — we will reply during business hours.</p>
+  </section>
+
+  <div class="contact-layout">
+    <div class="contact-card card">
+      <h2>Company</h2>
+      <p><strong>Phone:</strong> +7 777 881 2686</p>
+      <p><strong>Email:</strong> nomad@gmail.com</p>
+      <p><strong>Address:</strong> Astana, Kazakhstan</p>
+      <hr style="border:none;height:1px;background:rgba(0,0,0,0.06);margin:12px 0;">
+      <h3>Team</h3>
+      <p style="margin:6px 0;"><strong>A. Alikhan</strong> — CEO</p>
+      <p style="margin:6px 0;"><strong>K. Mukhammedali</strong> — CEO</p>
+    </div>
+
+    <div class="form-card card">
+      <form id="contact-form" novalidate>
+        <label for="cname">Name</label>
+        <input type="text" id="cname" name="cname" placeholder="Your name" required>
+
+        <label for="cphone">Phone</label>
+        <input type="tel" id="cphone" name="cphone" placeholder="+7 700 000 0000" required>
+
+        <label for="cmessage">Message</label>
+        <textarea id="cmessage" name="cmessage" placeholder="Your message" required maxlength="500"></textarea>
+
+        <div style="margin-top:12px; text-align:center;">
+          <button type="submit" class="bttn-cat">Send</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <a href="contact.html" class="bttn">Contact Us</a>
+    <p>© 2025 Nomad. Team Members: A. Alikhan & K. Mukhammedali</p>
+  </footer>
+</body>
+</html>
