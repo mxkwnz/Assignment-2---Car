@@ -107,7 +107,6 @@ body {
   left: 120px;
 }
 
-/* ---------- ABOUT SECTION ---------- */
 .about {
   padding: 40px 20px;
   text-align: center;
@@ -123,7 +122,6 @@ body {
   line-height: 1.5;
 }
 
-/* ---------- GALLERY ---------- */
 .gallery {
   display: flex;
   justify-content: center;
@@ -149,7 +147,6 @@ body {
   margin: 0 auto 7px auto;
 }
 
-/* ---------- BUTTONS ---------- */
 .bttna,
 .bttn-cat,
 .bttn {
@@ -178,7 +175,6 @@ body {
   transition: 0.22s;
 }
 
-/* ---------- FOOTER ---------- */
 footer {
   text-align: center;
   padding: 20px;
@@ -187,7 +183,6 @@ footer {
   margin-top: 40px;
 }
 
-/* ---------- CATALOG ---------- */
 .cat-head {
   text-align: center;
   padding: 15px;
@@ -234,7 +229,6 @@ footer {
   margin: 12px;
 }
 
-/* ---------- RENT FORM ---------- */
 .rent-box {
   max-width: 840px;
   margin: 36px auto 18px;
@@ -271,7 +265,6 @@ footer {
   border-color: rgba(214, 201, 189, 0.9);
 }
 
-/* ---------- RENT PREVIEW ---------- */
 .car-preview {
   max-width: 840px;
   margin: 18px auto 40px;
@@ -310,7 +303,6 @@ footer {
   margin-bottom: 12px;
 }
 
-/* ---------- CONTACT PAGE ---------- */
 .contact-layout {
   max-width: 840px;
   margin: 28px auto 40px;
