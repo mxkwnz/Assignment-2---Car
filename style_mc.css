@@ -1,279 +1,316 @@
-body{
-    margin: 0;
-    padding: 0;
-    font-family:'Cinzel';
-    background: black;
-    color: rgb(233, 225, 225);
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Cinzel', serif;
+  background: black;
+  color: rgb(233, 225, 225);
 }
 
-.nav{
-    background: rgb(0, 0, 0);
-    padding: 7px;
-    text-align: center;
-    margin: 0;
-}
-.nav a{
-    color: gray;
-    text-decoration:none;
-    margin: 17px;
-    font-weight: bold;
-    font-size: 17px;
-}
-.nav a:hover{
-    color:white;
-    transition: 0.5s;
+.nav {
+  display: flex;
+  align-items: center;  
+  justify-content: center; 
+  background: black;
+  padding: 20px 20px;
+  position: relative;
 }
 
-.about{
-    padding: 40px 20px;
-    text-align: center;
-}
-.about h1{
-    font-size:2.5rem;
-    margin-bottom: 20px;
-}
-.about p{
-    font-size: 1.1rem;
-    max-width: 1200px;
-    margin: auto;
-    line-height: 1.5;
+.logo {
+  position: absolute;
+  left: 100px;
+  padding-top: 20px;
 }
 
-.gallery{
-    display: flex;
-    justify-content:center;
-    gap: 170px;
-    padding: 40px 20px;
-    flex-wrap: wrap;
-}
-.car-box{
-    text-align: center;
-    background:  rgb(230, 230, 230);
-    padding-bottom: 10px;
-    border-radius: 7px;
-}
-.car-box:hover{
-    transform:scale(1.05);
-    transition: 0.5s;
-}
-.car-box img{
-    width: 400px;
-    height: 250px;
-    object-fit: cover;
-    display: block;
-    margin: 0 auto 7px auto;
+.logo img {
+  height: 50px; 
+  border-radius: 50%;
 }
 
-.bttna{
-    font-size: larger;
-    color:gray;
-    text-decoration: none;
-    font-weight: bold;
-    padding-bottom: 20px;
-}
-.bttna:hover{
-    color:rgb(50, 48, 48) ;
-    transition: 0.4s;
-}
-.bttn{
-    color: gray;
-    text-decoration: none;
-}
-.bttn:hover{
-    color: white;
-    transition: 0.3s;
+.logo:hover{
+  transform: scale(1.1);
+  transition: 0.3s;
 }
 
-footer{
-    text-align: center;
-    padding: 20px;
-    background: black;
-    color: gray;
-    margin-top: 40px;
+.nav-links {
+  display: flex;
+  gap: 35px; 
 }
 
-.cat-head{
-    text-align: center;
-    padding: 15px;
-}
-.cat-head h1{
-    font-size: 25px;
-}
-
-.cat-gall{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 30px;
-    padding: 40px;
-}
-
-.car-card{
-    background: rgb(233, 225, 225);
-    border-radius: 1px;
-    overflow: hidden;
-    text-align: center;
-    transition: transform 0.5s ease;
-    padding-bottom: 15px;
-}
-.car-card:hover{
-    transform: translateY(-10px);
-}
-.car-card img{
-    width: 100%;
-    height: 230px;
-    object-fit: cover;
-}
-.car-card h2{
-    font-size: 22px;
-    margin: 15px 0 10px;
-    color: rgb(0, 0, 0);
-}
-.car-card p{
-    font-size: 14px;
-    margin: 22px 15px;
-    color: rgb(0, 0, 0);
-}
-.car-card .price{
-    font-size: 17px;
-    font-weight: bold;
-    color: rgb(46, 76, 51);
-    margin: 15px;
-}
-
-.bttn-cat{
-    font-size: larger;
-    color:gray;
-    text-decoration: none;
-    font-weight: bold;
-    padding-bottom: 20px;
-}
-.bttn-cat:hover{
-    color:rgb(50, 48, 48) ;
-    transition: 0.4s;
-}
-
-.nav a {
+.nav-links a {
   color: gray;
   text-decoration: none;
-  margin: 17px;
   font-weight: 600;
   font-size: 15px;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
+  transition: 0.3s;
 }
 
-.card {
-  background: linear-gradient(180deg, #f2edea, #efe8e5);
-  color: #111;
-  padding: 26px;
-  border-radius: 14px;
-  border: 1px solid rgba(0,0,0,0.06);
-  box-shadow: 0 18px 40px rgba(0,0,0,0.55);
-  transition: box-shadow .28s ease;
+.nav-links a:hover {
+  color: white;
 }
 
+.sidebar {
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 260px;
+  margin-left:1300px;
+}
+
+.sidebar h3 {
+  font-size: 1.3rem;
+  color: #f5f5f5;
+  margin-bottom: 14px;
+  border-bottom: 2px solid gray;
+  padding-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+.sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 12px 0;
+}
+
+.sidebar a {
+  color: #bbb;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  position: relative;
+  transition: 0.3s ease;
+  padding-left: 5px;
+  display: inline-block;
+}
+
+.sidebar a::before {
+  content: "◄";
+  position: absolute;
+  left: 130px;
+  font-size: 0.8rem;
+  color: #777;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #fff;
+  padding-left: 2px;
+}
+
+.sidebar a:hover::before {
+  color: #00ffcc;
+  left: 120px;
+}
+
+/* ---------- ABOUT SECTION ---------- */
+.about {
+  padding: 40px 20px;
+  text-align: center;
+}
+.about h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+.about p {
+  font-size: 1.1rem;
+  max-width: 1200px;
+  margin: auto;
+  line-height: 1.5;
+}
+
+/* ---------- GALLERY ---------- */
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 170px;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+}
+.car-box {
+  text-align: center;
+  background: rgb(230, 230, 230);
+  padding-bottom: 10px;
+  border-radius: 7px;
+  transition: transform 0.5s;
+}
+.car-box:hover {
+  transform: scale(1.05);
+}
+.car-box img {
+  width: 400px;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 7px auto;
+}
+
+/* ---------- BUTTONS ---------- */
+.bttna,
+.bttn-cat,
+.bttn {
+  font-size: larger;
+  color: gray;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+.bttna:hover,
+.bttn-cat:hover,
+.bttn:hover {
+  color: rgb(50, 48, 48);
+  transition: 0.4s;
+}
+.bttn-cat {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 8px;
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+.bttn-cat:hover {
+  background: rgba(0, 0, 0, 0.03);
+  color: rgb(50, 48, 48);
+  transition: 0.22s;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: black;
+  color: gray;
+  margin-top: 40px;
+}
+
+/* ---------- CATALOG ---------- */
+.cat-head {
+  text-align: center;
+  padding: 15px;
+}
+.cat-head h1 {
+  font-size: 25px;
+}
+.cat-gall {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  padding: 40px;
+}
+.car-card {
+  background: rgb(233, 225, 225);
+  border-radius: 6px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.5s ease;
+  padding-bottom: 15px;
+}
+.car-card:hover {
+  transform: translateY(-10px);
+}
+.car-card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+.car-card h2 {
+  font-size: 22px;
+  margin: 15px 0 10px;
+  color: black;
+}
+.car-card p {
+  font-size: 14px;
+  margin: 12px 15px;
+  color: black;
+}
+.car-card .price {
+  font-size: 17px;
+  font-weight: bold;
+  color: rgb(46, 76, 51);
+  margin: 12px;
+}
+
+/* ---------- RENT FORM ---------- */
 .rent-box {
   max-width: 840px;
   margin: 36px auto 18px;
   padding: 28px;
   border-radius: 14px;
   background: linear-gradient(180deg, #f6f1ef, #f0e9e7);
-  border: 1px solid rgba(0,0,0,0.06);
-  box-shadow: 0 18px 40px rgba(0,0,0,0.55);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.55);
 }
-
 .rent-box label {
-  display:block;
-  margin-bottom:6px;
-  color:#222;
-  font-weight:700;
-  font-size:0.95rem;
+  display: block;
+  margin-bottom: 6px;
+  color: #222;
+  font-weight: 700;
+  font-size: 0.95rem;
 }
-
 .rent-box input,
 .rent-box select,
 .rent-box textarea {
-  width:100%;
-  padding:12px 14px;
-  border-radius:8px;
-  border:1px solid rgba(0,0,0,0.12);
-  background:#fff;
-  color:#111;
-  font-family: 'Cinzel', serif;
-  font-size:0.95rem;
-  margin-bottom:10px;
-  outline:none;
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background: #fff;
+  color: #111;
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+  outline: none;
 }
-
 .rent-box input:focus,
 .rent-box select:focus,
 .rent-box textarea:focus {
-  box-shadow: 0 0 0 6px rgba(214,201,189,0.06);
-  border-color: rgba(214,201,189,0.9);
+  box-shadow: 0 0 0 6px rgba(214, 201, 189, 0.06);
+  border-color: rgba(214, 201, 189, 0.9);
 }
 
-.bttn-cat {
-  display:inline-block;
-  padding:10px 18px;
-  border-radius:8px;
-  background: transparent;
-  color: gray;
-  font-weight:700;
-  text-decoration:none;
-  border: 1px solid rgba(0,0,0,0.05);
-  cursor:pointer;
-}
-
-.bttn-cat:hover {
-  color: rgb(50,48,48);
-  background: rgba(0,0,0,0.03);
-  transition: .22s;
-}
-
+/* ---------- RENT PREVIEW ---------- */
 .car-preview {
   max-width: 840px;
   margin: 18px auto 40px;
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 18px;
-  padding: 0;
 }
-
 .car-preview .car-card {
   background: #efe8e5;
   border-radius: 10px;
   overflow: hidden;
   text-align: center;
   padding-bottom: 10px;
-  border: 1px solid rgba(0,0,0,0.06);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.45);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
 }
-
 .car-preview .car-card img {
-  width:100%;
-  height:160px;
-  object-fit:cover;
-  display:block;
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
 }
-
 .car-preview .car-card h2 {
-  margin:12px 0 6px;
-  font-size:1rem;
-  color:#111;
+  margin: 12px 0 6px;
+  font-size: 1rem;
+  color: #111;
 }
-
 .car-preview .car-card p {
-  margin:0 12px 10px;
-  color:#333;
-  font-size:0.9rem;
+  margin: 0 12px 10px;
+  color: #333;
+  font-size: 0.9rem;
 }
-
 .car-preview .car-card .price {
-  font-weight:700;
-  color:#2e4c33;
-  margin-bottom:12px;
+  font-weight: 700;
+  color: #2e4c33;
+  margin-bottom: 12px;
 }
 
+/* ---------- CONTACT PAGE ---------- */
 .contact-layout {
   max-width: 840px;
   margin: 28px auto 40px;
@@ -281,45 +318,38 @@ footer{
   grid-template-columns: 1fr 1fr;
   gap: 18px;
 }
-
 .contact-layout .contact-card,
 .contact-layout .form-card {
   padding: 18px;
   border-radius: 12px;
-  background: linear-gradient(180deg,#f6f1ef,#f0e9e7);
-  border:1px solid rgba(0,0,0,0.06);
-  box-shadow: 0 14px 36px rgba(0,0,0,0.5);
+  background: linear-gradient(180deg, #f6f1ef, #f0e9e7);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.5);
 }
-
 .contact-card h2 {
   margin-top: 0;
   margin-bottom: 8px;
 }
-
 .contact-card p {
   margin: 6px 0;
   color: #222;
   font-size: 0.95rem;
 }
-
 .form-card label {
-  display:block;
-  margin-bottom:6px;
-  font-weight:700;
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 700;
 }
-
 .form-card input,
 .form-card textarea {
-  width:100%;
-  padding:10px 12px;
-  border-radius:6px;
-  border:1px solid rgba(0,0,0,0.12);
-  background:white;
-  margin-bottom:10px;
-  font-family:'Cinzel';
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background: white;
+  margin-bottom: 10px;
 }
-
 .form-card textarea {
-  height: 100px;       
-  resize: none;        
+  height: 100px;
+  resize: none;
 }
