@@ -4,7 +4,6 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Nomad - Rent</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style_mc.css">
 </head>
 <body>
@@ -20,77 +19,138 @@
   </nav>
 </header>
 
-<aside class="sidebar">
-        <h3>Quick Links</h3>
+ <aside class="sidebar">
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="catalog.html">Cars for Sale</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="index.html"><img src="https://uxwing.com/wp-content/themes/uxwing/download/web-app-development/home-page-white-icon.png" alt="Home"></a></li>
+            <li><a href="catalog.html"><img src="https://lh6.googleusercontent.com/proxy/ApzuEdRlL1ZfY87Mh298xRIrzJ3yC0wd70E5gKO4whM0DRXNs7C57AxGqJwggX1T-r2xzMqpA0k1Ihw5Hl7U07zi3paYtJo-OeT_nLbZW7An9TGuQw" alt="Cars For Sale"></a></li>
+            <li><a href="contact.html"><img src="https://lh5.googleusercontent.com/proxy/bjUt26LuVUmWulEZwkweR1X-ls7YZcmGBlh0Oz_71abzLN-X0nMSHTsC45rNHsqz8H_nQ5zRyBdOcRA-5SObEf5ZOdzD4pPx6-jgbQlV78a7chXMDetoX0_JxwmKBPBQG6mxN7RxbseSwzjJzOv-rTyJKBgb_ktiolxfxMJHc7Nsb7J51ghMqw" alt="Contact Us"></a></li>
         </ul>
     </aside>
 
-  <section class="cat-head">
-    <h1>Rent a Car</h1>
-    <p>Find your perfect ride — choose dates, car model and book.</p>
-  </section>
+<section class="cat-head">
+  <h1>Rent a Car</h1>
+  <p>Choose from our list below, check the index number and book your car.</p>
+</section>
 
-  <div class="rent-box card">
-    <form id="rent-form" novalidate>
-      <label for="car">Choose Car</label>
-      <select id="car" name="car" required>
-        <option value="">-- Select a car --</option>
-        <option value="Porsche 911">Porsche 911</option>
-        <option value="BMW M5">BMW M5</option>
-        <option value="Mercedes G63">Mercedes G63</option>
-      </select>
-
-      <label for="start">Start Date</label>
-      <input type="date" id="start" name="start" min="2025-09-20" required>
-
-      <label for="end">End Date</label>
-      <input type="date" id="end" name="end" min="2025-09-20" required>
-
-      <label for="name">Full Name</label>
-      <input type="text" id="name" name="name" placeholder="Your full name" required>
-
-      <label for="phone">Phone</label>
-      <input type="tel" id="phone" name="phone" placeholder="+7 700 000 0000" required>
-
-      <label for="notes">Notes (optional)</label>
-      <textarea id="notes" name="notes" placeholder="For example : need a child seat"></textarea>
-
-      <div style="margin-top:12px; text-align:center;">
-        <button type="submit" class="bttn-cat">Book Now</button>
-      </div>
-    </form>
+<section class="car-preview">
+  <div class="car-card">
+    <img src="Porsche 911.jpg" alt="Porsche 911">
+    <h2>1. Porsche 911</h2>
+    <p>Comfort · Automatic · 2021</p>
+    <p class="price">$120/day</p>
   </div>
 
-  <section class="car-preview">
-    <div class="car-card">
-      <img src="Porsche 911.jpg" alt="Porsche 911">
-      <h2>Porsche 911</h2>
-      <p>Comfort · Automatic · 2021</p>
-      <p class="price">$120,000</p>
-    </div>
+  <div class="car-card">
+    <img src="BMW M5.jpg" alt="BMW M5">
+    <h2>2. BMW M5</h2>
+    <p>Sport · Automatic · 2019</p>
+    <p class="price">$140/day</p>
+  </div>
 
-    <div class="car-card">
-      <img src="BMW M5.jpg" alt="BMW M5">
-      <h2>BMW M5</h2>
-      <p>Sport · Automatic · 2019</p>
-      <p class="price">$140,000</p>
-    </div>
+  <div class="car-card">
+    <img src="Mercedes G63.jpg" alt="Mercedes G63">
+    <h2>3. Mercedes G63</h2>
+    <p>Luxury · Automatic · 2022</p>
+    <p class="price">$200/day</p>
+  </div>
 
-    <div class="car-card">
-      <img src="Mercedes G63.jpg" alt="Mercedes G63">
-      <h2>Mercedes G63</h2>
-      <p>Luxury · Automatic · 2022</p>
-      <p class="price">$200,000</p>
-    </div>
-  </section>
+  <div class="car-card">
+    <img src="Toyota Camry.jpg" alt="Toyota Camry">
+    <h2>4. Toyota Camry</h2>
+    <p>Comfort · Automatic · 2020</p>
+    <p class="price">$50/day</p>
+  </div>
 
-  <footer>
-    <a href="contact.html" class="bttn">Contact Us</a>
-    <p>© 2025 Nomad. Team Members: A. Alikhan & K. Mukhammedali</p>
-  </footer>
+  <div class="car-card">
+    <img src="Kia Sportage.jpg" alt="Kia Sportage">
+    <h2>5. Kia Sportage</h2>
+    <p>Family SUV · Automatic · 2018</p>
+    <p class="price">$45/day</p>
+  </div>
+
+  <div class="car-card">
+    <img src="Hyundai Tucson.jpg" alt="Hyundai Tucson">
+    <h2>6. Hyundai Tucson</h2>
+    <p>SUV · Automatic · 2021</p>
+    <p class="price">$48/day</p>
+  </div>
+
+  <div class="car-card">
+    <img src="Lexus ES.png" alt="Lexus ES">
+    <h2>7. Lexus ES</h2>
+    <p>Premium · Automatic · 2020</p>
+    <p class="price">$95/day</p>
+  </div>
+
+  <div class="car-card">
+    <img src="Nissan X-Trail.jpg" alt="Nissan X-Trail">
+    <h2>8. Nissan X-Trail</h2>
+    <p>Off-road · Automatic · 2019</p>
+    <p class="price">$52/day</p>
+  </div>
+
+  <div class="car-card">
+    <img src="Audi Q5.jpg" alt="Audi Q5">
+    <h2>9. Audi Q5</h2>
+    <p>SUV · Automatic · 2022</p>
+    <p class="price">$110/day</p>
+  </div>
+</section>
+
+<div class="rent-box card">
+  <form id="rent-form">
+    <label for="index">Search by Car Index (1–9)</label>
+    <input type="number" id="index" name="index" min="1" max="9" placeholder="Enter index number">
+
+    <label for="car">Choose Car</label>
+    <select id="car" name="car" required>
+      <option value="">-- Select a car --</option>
+      <option value="Porsche 911">1. Porsche 911</option>
+      <option value="BMW M5">2. BMW M5</option>
+      <option value="Mercedes G63">3. Mercedes G63</option>
+      <option value="Toyota Camry">4. Toyota Camry</option>
+      <option value="Kia Sportage">5. Kia Sportage</option>
+      <option value="Hyundai Tucson">6. Hyundai Tucson</option>
+      <option value="Lexus ES">7. Lexus ES</option>
+      <option value="Nissan X-Trail">8. Nissan X-Trail</option>
+      <option value="Audi Q5">9. Audi Q5</option>
+    </select>
+
+    <label for="start">Start Date</label>
+    <input type="date" id="start" name="start" required>
+
+    <label for="end">End Date</label>
+    <input type="date" id="end" name="end" required>
+
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+    <label for="phone">Phone</label>
+    <input type="tel" id="phone" name="phone" placeholder="+7 700 000 0000" required>
+
+    <label for="notes">Notes (optional)</label>
+    <textarea id="notes" name="notes" placeholder="For example: need a child seat"></textarea>
+
+    <div style="margin-top:12px; text-align:center;">
+      <button type="submit" class="bttn-cat">Book Now</button>
+    </div>
+  </form>
+</div>
+
+<footer>
+  <a href="contact.html" class="bttn">Contact Us</a>
+  <p>© 2025 Nomad. Team Members: A. Alikhan & K. Mukhammedali</p>
+</footer>
+
+<script>
+  const indexInput = document.getElementById("index");
+  const carSelect = document.getElementById("car");
+  indexInput.addEventListener("input", function() {
+    let idx = parseInt(indexInput.value);
+    if (idx >= 1 && idx <= 9) {
+      carSelect.selectedIndex = idx;
+    }
+  });
+</script>
 </body>
 </html>
